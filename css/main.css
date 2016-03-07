@@ -1,0 +1,193 @@
+body {
+  background: #F9FAFC;
+  font-family: "Lato", Helvetica, sans-serif; }
+
+.boxHelper {
+  color: #fff;
+  background-color: #82D4ED;
+  text-align: center; }
+
+/* HEADER/NAVAGATION-----------------------------*/
+header {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+#logo {
+  width: 100%;
+  max-height: 175px; }
+
+#mobileNav ul li {
+  margin-bottom: 10px;
+  background-color: #BFE7F6;
+  padding: 0; }
+#mobileNav a {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #58585A;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.75em;
+  padding: 0 5px 0 0;
+  text-align: right; }
+#mobileNav a:hover {
+  background-color: #F9FAFC; }
+
+#desktopHeader {
+  background-image: url("../images/fisherman.jpg"); }
+
+#mainSection {
+  background-image: url("../images/fisherman_small.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #mainSection p {
+    font-family: "Lato", Helvetica, sans-serif; }
+  #mainSection .baitcaster, #mainSection .baitcasterSub {
+    margin-top: 175px;
+    font-size: 2em;
+    background-color: #58585A;
+    color: #F9FAFC;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 10px;
+    -webkit-box-shadow: -4px 4px 0px 1px #49494c;
+    -moz-box-shadow: -4px 4px 0px 1px #49494c;
+    box-shadow: -4px 4px 0px 1px #49494c; }
+  #mainSection .baitcasterSub {
+    margin-top: -5px; }
+  #mainSection .price {
+    margin-top: 30px;
+    font-size: 3.5em;
+    background-color: #82D4ED;
+    text-align: center;
+    color: #F9FAFC;
+    background-color: rgba(130, 212, 237, 0.5); }
+
+.noRightPad {
+  padding-right: 0;
+  margin-right: 0; }
+
+.noLeftPad {
+  padding-left: 0;
+  margin-left: 0; }
+
+/* ABOUT SECTION ------------------------ */
+#aboutSection h2 {
+  background-color: #58585A;
+  text-align: right;
+  color: #F9FAFC;
+  font-style: italic;
+  font-weight: 600;
+  padding-right: 10px; }
+#aboutSection p {
+  color: #A4A5A6;
+  text-align: center;
+  font-size: 1.5em; }
+#aboutSection img {
+  width: 100%; }
+
+/* REVIEWS SECTION ------------------------ */
+#reviewSection h2 {
+  background-color: #58585A;
+  text-align: left;
+  color: #F9FAFC;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 10px; }
+#reviewSection p {
+  color: #58585A;
+  height: 220px;
+  background-color: #BFE7F6;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px 15px 15px 15px; }
+
+.carousel-indicators {
+  bottom: -30px; }
+
+.carousel-indicators li {
+  border: 2px solid #58585A; }
+
+.carousel-indicators .active {
+  background-color: #58585A; }
+
+.carousel-inner {
+  margin-bottom: 30px; }
+
+/* SHOP SECTION ------------------------ */
+#shopSection {
+  padding-top: 40px; }
+  #shopSection h2 {
+    background-color: #58585A;
+    text-align: right;
+    color: #F9FAFC;
+    font-style: italic;
+    font-weight: 600;
+    padding-right: 10px; }
+  #shopSection img {
+    max-width: 100%; }
+  #shopSection h3 {
+    font-size: 3em;
+    color: #A4A5A6; }
+  #shopSection input, #shopSection label {
+    float: left;
+    margin: 5px;
+    margin-top: 25%; }
+  #shopSection label {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #A4A5A6; }
+  #shopSection #quantity {
+    width: 50px; }
+  #shopSection p {
+    background-color: #BFE7F6;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: #F9FAFC;
+    text-align: center; }
+  #shopSection button {
+    font-size: 1.85em;
+    font-family: "Lato", Helvetica, sans-serif;
+    color: #A4A5A6; }
+  #shopSection h4 {
+    text-align: center;
+    font-family: "Lato", Helvetica, sans-serif;
+    color: #A4A5A6;
+    font-style: italic; }
+    #shopSection h4 a {
+      color: #82D4ED; }
+
+/* RATE SECTION ------------------------ */
+#rateSection .form-group {
+  margin: 0; }
+#rateSection .form-control {
+  border-radius: 0px;
+  margin-top: 7px;
+  text-align: center;
+  font-family: "Lato", Helvetica, sans-serif; }
+#rateSection h2 {
+  background-color: #58585A;
+  text-align: left;
+  color: #F9FAFC;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 10px; }
+#rateSection p {
+  background-color: #BFE7F6;
+  color: #A4A5A6;
+  font-size: 1.4em;
+  padding: 15px; }
+#rateSection textarea {
+  color: #A4A5A6; }
+#rateSection button {
+  width: 100%;
+  margin-top: 7px;
+  border-radius: 0px;
+  color: #A4A5A6; }
+
+/*FOOTER--------------*/
+#footerLogo {
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */

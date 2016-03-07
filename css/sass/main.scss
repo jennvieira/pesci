@@ -1,0 +1,317 @@
+  
+$mainFont: 'Lato', Helvetica, sans-serif;
+
+$white: #F9FAFC;
+$lblue: #BFE7F6;
+$dblue: #82D4ED;
+$lgrey: #A4A5A6;
+$dgrey: #58585A;
+
+body
+{
+	background: $white;
+	font-family: $mainFont;
+}
+
+
+
+
+.boxHelper{
+	color: #fff;
+	background-color: $dblue;
+	text-align: center;
+}
+
+/* HEADER/NAVAGATION-----------------------------*/
+header 
+{
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+#logo {
+	width: 100%;
+	max-height: 175px;
+}
+
+#mobileNav
+{
+
+	ul li {
+		margin-bottom: 10px;
+		background-color: $lblue;
+		padding: 0;
+	}
+
+	a{
+		font-family: $mainFont;
+		color: $dgrey;
+		font-weight: 900;
+		font-style: italic;
+		font-size: 1.75em;
+		padding: 0 5px 0 0;
+		text-align: right;
+
+	}
+
+	a:hover {
+	background-color: $white;
+	}
+}
+
+#desktopHeader
+{
+	background-image: url("../images/fisherman.jpg");
+}
+
+#mainSection {
+		background-image: url("../images/fisherman_small.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  p {
+
+  	font-family: $mainFont;
+  } 
+
+  .baitcaster, .baitcasterSub {
+  	margin-top: 175px;
+  	font-size: 2em;
+  	background-color: $dgrey;
+  	color: $white;
+  	font-style: italic;
+  	font-weight: 300;
+  	padding-left: 10px;
+  	-webkit-box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
+	-moz-box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
+	box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
+  }
+
+  .baitcasterSub {
+
+  		margin-top: -5px;
+  }
+
+  .price {
+
+  		margin-top: 30px;
+  		font-size: 3.5em;
+  		background-color: $dblue;
+  		text-align: center;
+  		color: $white;
+  		background-color:rgba(130, 212, 237, 0.5);
+  }
+
+
+
+  }
+
+
+
+
+.noRightPad {
+   padding-right: 0;
+   margin-right: 0;
+}
+
+.noLeftPad {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+/* ABOUT SECTION ------------------------ */
+
+#aboutSection {
+	h2 {
+	background-color: $dgrey;
+	text-align: right;
+	color: $white;
+	font-style: italic;
+	font-weight: 600;
+	padding-right: 10px;
+	}
+
+	p {
+	color: $lgrey;
+	text-align: center;
+	font-size: 1.5em;
+	}
+
+	img {
+	width: 100%;
+	}
+}
+
+/* REVIEWS SECTION ------------------------ */
+
+#reviewSection {
+	h2 {
+	background-color: $dgrey;
+	text-align: left;
+	color: $white;
+	font-style: italic;
+	font-weight: 600;
+	padding-left: 10px;	
+
+	}
+
+	p {
+
+	color: $dgrey;
+	height: 220px;
+	background-color: $lblue;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 30px 15px 15px 15px;
+	}
+
+
+}
+
+.carousel-indicators {
+  bottom:-30px;
+}
+
+.carousel-indicators li {
+	border: 2px solid $dgrey;
+}
+
+.carousel-indicators .active { 
+background-color: $dgrey;
+
+	}
+
+.carousel-inner {
+   margin-bottom:30px;
+}
+
+
+/* SHOP SECTION ------------------------ */
+
+#shopSection {
+
+	padding-top: 40px;
+
+		h2 {
+	background-color: $dgrey;
+	text-align: right;
+	color: $white;
+	font-style: italic;
+	font-weight: 600;
+	padding-right: 10px;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+
+	h3 {
+		font-size: 3em;
+		color: $lgrey;
+	}
+
+	input, label {
+    float:left;
+    margin:5px;
+    margin-top: 25%;
+}
+
+label {
+	font-family: $mainFont;
+	font-size: 1.5em;
+	color: $lgrey;
+}
+
+#quantity {
+	width: 50px;
+}
+
+p {
+	background-color: $lblue;
+	font-family: $mainFont;
+	font-size: 2.5em;
+	color: $white;
+	text-align: center;
+}
+
+button {
+
+	font-size: 1.85em;
+	font-family: $mainFont;
+	color: $lgrey;
+}
+
+h4 {
+	
+	text-align: center;
+	font-family: $mainFont;
+	color: $lgrey;
+	font-style: italic;
+
+	a {
+	color: $dblue;
+	}
+}
+
+}
+
+/* RATE SECTION ------------------------ */
+
+#rateSection {
+
+	.form-group {
+	margin: 0;
+
+	}
+
+	.form-control {
+	border-radius: 0px;
+	margin-top: 7px;
+	text-align: center;
+	font-family: $mainFont;
+
+	}
+
+
+
+	h2 {
+	background-color: $dgrey;
+	text-align: left;
+	color: $white;
+	font-style: italic;
+	font-weight: 600;
+	padding-left: 10px;	
+
+	}
+
+	p {
+	background-color: $lblue;
+	color: $lgrey;
+	font-size: 1.4em;
+	padding: 15px;
+	}
+
+	textarea {
+	color: $lgrey;
+	}
+
+	button{
+	width: 100%;
+	margin-top: 7px;
+	border-radius: 0px;
+	color: $lgrey;
+}
+}
+
+/*FOOTER--------------*/
+
+#footerLogo
+{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+
+
