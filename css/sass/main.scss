@@ -7,6 +7,10 @@ $dblue: #82D4ED;
 $lgrey: #A4A5A6;
 $dgrey: #58585A;
 
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
 body
 {
 	background: $white;
@@ -16,11 +20,7 @@ body
 
 
 
-.boxHelper{
-	color: #fff;
-	background-color: $dblue;
-	text-align: center;
-}
+
 
 /* HEADER/NAVAGATION-----------------------------*/
 header 
@@ -38,12 +38,13 @@ header
 
 	ul li {
 		margin-bottom: 10px;
-		background-color: $lblue;
 		padding: 0;
 	}
 
 	a{
 		font-family: $mainFont;
+		background-color: $lblue;
+		border-radius: 0px;	
 		color: $dgrey;
 		font-weight: 900;
 		font-style: italic;
@@ -55,20 +56,47 @@ header
 
 	a:hover {
 	background-color: $white;
+	border-radius: 0px;
 	}
 }
 
-#desktopHeader
-{
-	background-image: url("../images/fisherman.jpg");
+@media (min-width: $screen-sm-min) { 
+
+#mobileNav {
+
+ul li a{
+	margin: 60px 20px 0 0;
+	width: 125px;
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(88, 88, 90, 1);
+-moz-box-shadow:   5px 5px 0px 0px rgba(88, 88, 90, 1);
+box-shadow:    5px 5px 0px 0px rgba(88, 88, 90, 1);
+
 }
 
+ul li a:hover {
+	background-color: $lblue;
+	position: relative;
+	top: 2px;
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(88, 88, 90, 1);
+-moz-box-shadow:   5px 5px 0px 0px rgba(88, 88, 90, 1);
+box-shadow:    5px 5px 0px 0px rgba(88, 88, 90, 1);
+
+}
+}
+	
+}
+
+
+
+
+
 #mainSection {
-		background-image: url("../images/fisherman_small.jpg");
+		background-image: url("../images/fishermancropped.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 
   p {
 
@@ -96,13 +124,41 @@ header
   .price {
 
   		margin-top: 30px;
-  		font-size: 3.5em;
+  		font-size: 3em;
   		background-color: $dblue;
   		text-align: center;
   		color: $white;
   		background-color:rgba(130, 212, 237, 0.5);
   }
 
+
+
+  }
+
+  @media (min-width: $screen-sm-min) { 
+
+  #mainSection {
+
+  background-image: url("../images/fisherman2cropped.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  		.baitcaster {
+  		margin-top: 10px;
+ 
+  		}
+
+  		.baitcaster, .baitcasterSub {
+  		font-size: 3.25em;
+  		text-align: center;
+  		}
+
+  		.baitcasterSub {
+  		margin-bottom: 30px;
+  		}
+  }
 
 
   }
@@ -120,6 +176,59 @@ header
 	margin-left: 0;
 }
 
+
+/*DESKTOP--------*/
+
+#desktopImage {
+
+	margin-top: -20px;
+	width: 100%;
+}
+
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(88, 88, 90, 0.3);
+  margin-top: -20px;
+}
+
+.navbar-brand {
+	margin-bottom: 300px;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+#desktopHeader {
+	
+	ul li a { font-family: $mainFont;
+		background-color: $lblue;
+		border-radius: 0px;	
+		color: $dgrey;
+		font-weight: 900;
+		font-style: italic;
+		font-size: 1.75em;
+		padding: 0 5px 0 0;
+		text-align: right;
+		}
+
+}
+
+#desktopLogo
+{
+	width: 140%;
+	padding-left: 10px;
+}
+
 /* ABOUT SECTION ------------------------ */
 
 #aboutSection {
@@ -135,13 +244,24 @@ header
 	p {
 	color: $lgrey;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	}
 
 	img {
 	width: 100%;
 	}
+
+	 @media (min-width: $screen-sm-min) {
+	 h2 {
+	  font-size: 2.75em;
+	 }
+	 p  {
+	 text-align: left;
+	 padding: 10px;
+	 }
+	 }
 }
+
 
 /* REVIEWS SECTION ------------------------ */
 
@@ -164,6 +284,23 @@ header
 	font-size: 1.5em;
 	text-align: center;
 	padding: 30px 15px 15px 15px;
+	}
+
+	.sm-reel {
+	width: 100%;
+	padding: 20px;
+	}
+
+	@media (min-width: $screen-sm-min) {
+
+	h2 {
+	font-size: 2.75em;
+	margin-bottom: 50px;
+	}
+
+	#reviewGallery {
+	padding-right: 30px;
+	}
 	}
 
 
@@ -237,9 +374,10 @@ p {
 
 button {
 
-	font-size: 1.85em;
+	font-size: 1.5em;
 	font-family: $mainFont;
 	color: $lgrey;
+	
 }
 
 h4 {
@@ -251,6 +389,13 @@ h4 {
 
 	a {
 	color: $dblue;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	
+	h2 {
+	font-size: 2.75em;
 	}
 }
 
@@ -306,12 +451,20 @@ h4 {
 
 /*FOOTER--------------*/
 
-#footerLogo
-{
-	margin-bottom: 15px;
-	margin-top: 15px;
+footer {
+
+#footerLogo{
+	
+	margin-top: 10px;
+
 }
 
+hr
+{
+	border-top: 2px solid $dgrey;
+	width: 90%;
 
+}
+}
 
 

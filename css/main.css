@@ -2,11 +2,6 @@ body {
   background: #F9FAFC;
   font-family: "Lato", Helvetica, sans-serif; }
 
-.boxHelper {
-  color: #fff;
-  background-color: #82D4ED;
-  text-align: center; }
-
 /* HEADER/NAVAGATION-----------------------------*/
 header {
   padding-top: 20px;
@@ -18,10 +13,11 @@ header {
 
 #mobileNav ul li {
   margin-bottom: 10px;
-  background-color: #BFE7F6;
   padding: 0; }
 #mobileNav a {
   font-family: "Lato", Helvetica, sans-serif;
+  background-color: #BFE7F6;
+  border-radius: 0px;
   color: #58585A;
   font-weight: 900;
   font-style: italic;
@@ -29,13 +25,25 @@ header {
   padding: 0 5px 0 0;
   text-align: right; }
 #mobileNav a:hover {
-  background-color: #F9FAFC; }
+  background-color: #F9FAFC;
+  border-radius: 0px; }
 
-#desktopHeader {
-  background-image: url("../images/fisherman.jpg"); }
-
+@media (min-width: 768px) {
+  #mobileNav ul li a {
+    margin: 60px 20px 0 0;
+    width: 125px;
+    -webkit-box-shadow: 5px 5px 0px 0px #58585a;
+    -moz-box-shadow: 5px 5px 0px 0px #58585a;
+    box-shadow: 5px 5px 0px 0px #58585a; }
+  #mobileNav ul li a:hover {
+    background-color: #BFE7F6;
+    position: relative;
+    top: 2px;
+    -webkit-box-shadow: 5px 5px 0px 0px #58585a;
+    -moz-box-shadow: 5px 5px 0px 0px #58585a;
+    box-shadow: 5px 5px 0px 0px #58585a; } }
 #mainSection {
-  background-image: url("../images/fisherman_small.jpg");
+  background-image: url("../images/fishermancropped.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,12 +65,26 @@ header {
     margin-top: -5px; }
   #mainSection .price {
     margin-top: 30px;
-    font-size: 3.5em;
+    font-size: 3em;
     background-color: #82D4ED;
     text-align: center;
     color: #F9FAFC;
     background-color: rgba(130, 212, 237, 0.5); }
 
+@media (min-width: 768px) {
+  #mainSection {
+    background-image: url("../images/fisherman2cropped.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    #mainSection .baitcaster {
+      margin-top: 10px; }
+    #mainSection .baitcaster, #mainSection .baitcasterSub {
+      font-size: 3.25em;
+      text-align: center; }
+    #mainSection .baitcasterSub {
+      margin-bottom: 30px; } }
 .noRightPad {
   padding-right: 0;
   margin-right: 0; }
@@ -70,6 +92,46 @@ header {
 .noLeftPad {
   padding-left: 0;
   margin-left: 0; }
+
+/*DESKTOP--------*/
+#desktopImage {
+  margin-top: -20px;
+  width: 100%; }
+
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(88, 88, 90, 0.3);
+  margin-top: -20px; }
+
+.navbar-brand {
+  margin-bottom: 300px; }
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;
+  /* Cancel default li float: left */
+  width: 139px; }
+
+.navbar-fixed-left + .container {
+  padding-left: 160px; }
+
+#desktopHeader ul li a {
+  font-family: "Lato", Helvetica, sans-serif;
+  background-color: #BFE7F6;
+  border-radius: 0px;
+  color: #58585A;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.75em;
+  padding: 0 5px 0 0;
+  text-align: right; }
+
+#desktopLogo {
+  width: 140%;
+  padding-left: 10px; }
 
 /* ABOUT SECTION ------------------------ */
 #aboutSection h2 {
@@ -82,9 +144,15 @@ header {
 #aboutSection p {
   color: #A4A5A6;
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.25em; }
 #aboutSection img {
   width: 100%; }
+@media (min-width: 768px) {
+  #aboutSection h2 {
+    font-size: 2.75em; }
+  #aboutSection p {
+    text-align: left;
+    padding: 10px; } }
 
 /* REVIEWS SECTION ------------------------ */
 #reviewSection h2 {
@@ -101,6 +169,15 @@ header {
   font-size: 1.5em;
   text-align: center;
   padding: 30px 15px 15px 15px; }
+#reviewSection .sm-reel {
+  width: 100%;
+  padding: 20px; }
+@media (min-width: 768px) {
+  #reviewSection h2 {
+    font-size: 2.75em;
+    margin-bottom: 50px; }
+  #reviewSection #reviewGallery {
+    padding-right: 30px; } }
 
 .carousel-indicators {
   bottom: -30px; }
@@ -146,7 +223,7 @@ header {
     color: #F9FAFC;
     text-align: center; }
   #shopSection button {
-    font-size: 1.85em;
+    font-size: 1.5em;
     font-family: "Lato", Helvetica, sans-serif;
     color: #A4A5A6; }
   #shopSection h4 {
@@ -156,6 +233,9 @@ header {
     font-style: italic; }
     #shopSection h4 a {
       color: #82D4ED; }
+  @media (min-width: 768px) {
+    #shopSection h2 {
+      font-size: 2.75em; } }
 
 /* RATE SECTION ------------------------ */
 #rateSection .form-group {
@@ -186,8 +266,10 @@ header {
   color: #A4A5A6; }
 
 /*FOOTER--------------*/
-#footerLogo {
-  margin-bottom: 15px;
-  margin-top: 15px; }
+footer #footerLogo {
+  margin-top: 10px; }
+footer hr {
+  border-top: 2px solid #58585A;
+  width: 90%; }
 
 /*# sourceMappingURL=main.css.map */
