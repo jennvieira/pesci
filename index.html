@@ -18,22 +18,27 @@
 
 
 <!-- START MOBILE/TABLET HEADER............... -->
-    <header id="mobileHeader" class="hidden-lg">
+    <header id="mobileHeader" class="hidden-md hidden-lg">
 
    <div class="container">
       <div class="row">
 
-        <div class="col-xs-6 col-lg-3">
+        <div class="col-xs-6 col-sm-3 col-lg-3">
           <img src="images/pescilogo.svg" class="img-fluid" id="logo" alt="Pesci Logo">
         </div>
 
-        <nav class="col-xs-6" id="mobileNav" role="navigation">
-        <ul class="nav nav-pills nav-justified">
-          <li><a href="#">ABOUT</a></li>
+        <nav class="col-xs-6 col-sm-9" id="mobileNav" role="navigation">
+        
+      
+
+        <ul class="nav nav-pills nav-justified row">
+         <li><a href="#">ABOUT</a></li>
           <li><a href="#">REVIEWS</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">RATE</a></li>
+           <li><a href="#">SHOP</a></li>
+            <li><a href="#">RATE</a></li>
         </ul>
+
+
       </nav>
 
       </div>
@@ -43,11 +48,30 @@
 
 
     </header>
+
+
 <!-- END MOBILE/TABLET HEADER............... -->
 
 <!-- START DESKTOP HEADER............... -->
-<header id="desktopHeader" class="hidden-md hidden-sm hidden-xs">
+<header id="desktopHeader" class="hidden-sm hidden-xs">
+
+
+  <div class="navbar navbar-fixed-left">
+
+  <a class="navbar-brand" href="#"><img src="images/pescilogo.png" alt="Brand Logo" id="desktopLogo"></a>
+
+
+  <ul class="nav navbar-nav">
+   <li><a href="#">ABOUT</a></li>
+   <li><a href="#">REVIEWS</a></li>
+  <li><a href="#">SHOP</a></li>
+  <li><a href="#">RATE</a></li>
+  </ul>
+</div>
+
   
+
+  <img src="images/fisherman.jpg" alt="Fisherman Image" id="desktopImage" class="img-fluid">
 
 
 
@@ -56,27 +80,32 @@
 
 <!-- START MAIN  SECTION............. -->
 
-<section id="mainSection" class="hidden-lg">
+<section id="mainSection" class="hidden-lg hidden-md">
 
 
 
     <div class="container-fluid">
 
+      <div class="row">
+        <div class="hidden-xs col-sm-4 col-sm-offset-8 noRightPad">
+          <p class="price">$39.99</p>
+        </div>
+      </div>
 
       <div class="row">
-      <div class="col-xs-7 col-xs-offset-5 noRightPad">
+      <div class="col-xs-7 col-xs-offset-5 col-sm-5 col-sm-offset-7 noRightPad">
       <p class="baitcaster">BAITCASTER</p>
       </div>
       </div>
 
       <div class="row">
-      <div class="col-xs-4 col-xs-offset-8 noRightPad">
+      <div class="col-xs-4 col-xs-offset-8 col-sm-3 col-sm-offset-9 noRightPad">
       <p class="baitcasterSub">3000</p>
       </div>
       </div>
 
       <div class="row">
-      <div class="col-xs-5 noLeftPad">
+      <div class="col-xs-6 hidden-sm hidden-md hidden-lg noLeftPad">
       <p class="price">$39.99</p>
       </div>
       </div>
@@ -96,19 +125,19 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xs-10 noLeftPad">
+        <div class="col-xs-10 col-sm-8 noLeftPad">
           <h2>ABOUT</h2>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-xs-8 col-xs-offset-2 hidden-sm">
           <img src="images/reel.png" alt="Fishing Reel" class="img-fluid">
         </div>
       </div>
 
       <div class="row">
-          <div class="col-xs-10 col-xs-offset-1">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
 
         <p>So much technology for such a great price! This Canadian fishing reel sports a sleek and durable charcoal graphite finish, plus our proven Smart Cast anti-backlash technology, the Baitcaster 3000 Reel features both inner and outer centrifugal brake systems to give you total control of the cast from beginning to end, virtually eliminating backlashes. Features a graphite frame; 5-bearing system; Powerlock™ instant anti-reverse; Recurve handle; EVA knobs; recurve drag star; forged, double-anodized-aluminum spool.
         </p>
@@ -116,7 +145,7 @@
     </div>
 
       <div class="row">
-        <div class="col-xs-4 col-xs-offset-4">
+        <div class="col-xs-4 col-xs-offset-4 hidden-sm">
           <img src="images/pescilogo.svg" alt="Pesci Logo">
         </div>
       </div>
@@ -132,13 +161,18 @@
 <div class="container-fluid">
 
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-2 noRightPad">
+      <div class="col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-4 noRightPad">
         <h2>REVIEWS</h2>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-xs-12 noLeftPad noRightPad">
+
+      <div class="hidden-xs col-sm-6">
+        <img src="images/reel.png" alt="Baitcaster 3000" class="sm-reel">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 noLeftPad noRightPad">
     <div id="reviewGallery" class="carousel slide" data-ride="carousel">
 
        
@@ -172,8 +206,8 @@
           </div>
 
             <div class="item row">
-            <div class="col-xs-12">
-            <p>“Easy to dial in with light or heavy lures. Casts a mile and retrieves super smooth. Would definitely encourage anyone to go for the Baitcaster 3000…if you don’t like it I’ll eat my next catch RAW!"</p>
+            <div class="col-xs-12>
+            <p>“Easy to dial in with light or heavy lures. Casts a mile and retrieves super smooth. Would definitely encourage anyone to go for the Baitcaster 3000."</p>
             </div>
             </div>
 
@@ -181,10 +215,13 @@
         </div>
       </div>
     </div>
+
+
+
   </div>
 
             <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6">
            <ol class="carousel-indicators">
           <li data-target="#reviewGallery" data-slide-to="0" class="active"></li>
           <li data-target="#reviewGallery" data-slide-to="1"></li>
@@ -208,7 +245,7 @@
 <div class="container-fluid">
 
   <div class="row">
-        <div class="col-xs-10 noLeftPad">
+        <div class="col-xs-10 col-sm-8 noLeftPad">
           <h2>SHOP</h2>
         </div>
       </div>
@@ -238,7 +275,8 @@
 
 
 <div class="row">
-  <div class="col-xs-6">
+
+  <div class="col-xs-6 hidden-sm">
     <p>$39.99</p>
   </div>
 
@@ -251,8 +289,7 @@
   
 
 <!-- END BUY FORM........ -->
-</div>
-</div>
+
 
 <div class="row">
   <div class="col-xs-12">
@@ -331,6 +368,8 @@ distributors <a href="#">here.</a></h4>
         <img src="images/pescilogo.png" alt="Pesci Logo" id="footerLogo">
       </div>
     </div>
+
+    <hr>
 
     <div class="row">
 
