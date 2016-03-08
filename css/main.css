@@ -365,8 +365,17 @@ footer {
   padding-bottom: 30px; }
   footer #footerLogo {
     margin-top: 10px; }
-  footer hr {
-    border-top: 2px solid #58585A;
-    width: 90%; }
+
+#mediaIcons {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 3px solid #58585A; }
+
+@media (min-width: 992px) {
+  #mediaIcons {
+    padding-left: 50px; } }
+@media (min-width: 1200px) {
+  #mediaIcons {
+    padding-right: 75px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -669,12 +669,28 @@ padding-bottom: 30px;
 
 }
 
-hr
-{
-	border-top: 2px solid $dgrey;
-	width: 90%;
+}
+
+#mediaIcons {
+margin-top: 30px;
+padding-top: 30px;
+
+border-top: 3px solid $dgrey;
 
 }
+
+@media (min-width: $screen-md-min){
+	#mediaIcons {
+	padding-left: 50px;
+	}
 }
+
+@media (min-width: $screen-lg-min) {
+	
+	#mediaIcons {
+	padding-right: 75px;
+	}
+}
+
 
 
