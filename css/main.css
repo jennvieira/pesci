@@ -303,11 +303,6 @@ header {
     #shopSection #addBut {
       padding: 0px 30px 0px 30px; } }
 
-#shopContainer {
-  border: 2px solid #82D4ED;
-  padding: 30px;
-  margin: 20px; }
-
 /* RATE SECTION ------------------------ */
 #rateSection .form-group {
   margin: 0; }
