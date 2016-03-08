@@ -98,11 +98,18 @@ header {
 @media (min-width: 992px) {
   #mainSection {
     background-image: none; }
+    #mainSection .baitcaster, #mainSection .baitcasterSub {
+      font-size: 4em;
+      font-weight: 500; }
 
   .baitcaster, .baitcasterSub, .price {
     position: relative;
     bottom: 300px;
-    padding: 0; } }
+    padding: 0;
+    font-size: 3em; } }
+@media (min-width: 992px) {
+  .baitcasterSub {
+    color: #58585A; } }
 .noRightPad {
   padding-right: 0;
   margin-right: 0; }
@@ -231,9 +238,6 @@ header {
     padding-top: 40px;
     font-size: 1.25em; } }
 
-#reviewGallery {
-  background-color: #BFE7F6; }
-
 .carousel-indicators li {
   border: 2px solid #58585A;
   height: 15px;
@@ -291,17 +295,17 @@ header {
       font-size: 2.75em; }
     #shopSection .shopTitle {
       font-size: 2.2em; }
-    #shopSection #shopPrice {
-      padding-top: 20px; }
     #shopSection #QuantLabel {
       padding-left: 10px;
       padding-right: 20px; }
+    #shopSection #QuantLabel, #shopSection #quantity {
+      margin-top: 50px; }
     #shopSection #addBut {
       padding: 0px 30px 0px 30px; } }
 
 #shopContainer {
   border: 2px solid #82D4ED;
-  padding: 10px;
+  padding: 30px;
   margin: 20px; }
 
 /* RATE SECTION ------------------------ */
@@ -341,10 +345,10 @@ header {
   padding-top: 70px; }
 
 #getOff {
-  font-size: 2.5em; }
+  font-size: 2em; }
 
 #nextPurch {
-  font-size: 1.75em; }
+  font-size: 1.5em; }
 
 @media (min-width: 768px) {
   #rateSection .letUs {

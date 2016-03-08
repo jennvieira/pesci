@@ -134,6 +134,7 @@ background-image: url("../images/fishermancropped.jpg");
   .baitcasterSub {
 
   		margin-top: -5px;
+
   }
 
   .price {
@@ -185,6 +186,12 @@ background-image: url("../images/fishermancropped.jpg");
 #mainSection {
 background-image: none;
 
+.baitcaster, .baitcasterSub {
+  		font-size: 4em;
+  		font-weight: 500;
+  		}
+
+
 }
 
 
@@ -192,12 +199,20 @@ background-image: none;
 	position: relative;
 	bottom: 300px; 
 	padding:0;
+	font-size: 3em;
 
 
 }
 
 
 
+ }
+
+ @media (min-width: $screen-md-min) {
+
+ .baitcasterSub {
+ color: $dgrey;
+ }
  }
 
 
@@ -413,9 +428,7 @@ img {
 
 }
 
-#reviewGallery {
-	background-color: $lblue;
-}
+
 
 
 .carousel-indicators li {
@@ -474,12 +487,15 @@ label {
 	width: 50px;
 }
 
+
+
 .shopPrice {
 	background-color: $lblue;
 	font-family: $mainFont;
 	font-size: 2.5em;
 	color: $white;
 	text-align: center;
+
 }
 
 
@@ -518,14 +534,16 @@ button {
 	font-size: 2.2em;
 	}
 	
-	#shopPrice{
-	padding-top: 20px;
 	
-	}
 	
 	#QuantLabel{
 	padding-left: 10px;
 	padding-right: 20px;
+	}
+
+	#QuantLabel, #quantity
+	{
+	margin-top: 50px;
 	}
 	
 	#addBut{
@@ -540,7 +558,7 @@ button {
 
 #shopContainer {
 	border: 2px solid $dblue;
-	padding: 10px;
+	padding: 30px;
 	margin: 20px;
 }
 
@@ -607,11 +625,11 @@ padding-top: 70px;
 
 
 #getOff {
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 #nextPurch {
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
 @media (min-width: $screen-sm-min) {
