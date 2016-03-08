@@ -26,11 +26,22 @@ body
 header 
 {
 	padding-top: 20px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;		
 }
+
+#presents{
+	text-align: center;
+	color: $lgrey;
+	font-size: 2.5em;
+	font-weight: 300;
+	}
+
+
+
 #logo {
 	width: 100%;
 	max-height: 175px;
+	
 }
 
 #mobileNav
@@ -111,9 +122,14 @@ box-shadow:    5px 5px 0px 0px rgba(88, 88, 90, 1);
   	font-style: italic;
   	font-weight: 300;
   	padding-left: 10px;
-  	-webkit-box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
-	-moz-box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
-	box-shadow: -4px 4px 0px 1px rgba(73,73,76,1);
+	margin-right: 5px;
+  	-webkit-box-shadow: -1px 3px 0px 1px rgba(73,73,76,1);
+	-moz-box-shadow: -1px 3px 0px 1px rgba(73,73,76,1);
+	box-shadow: -1px 3px 0px 1px rgba(73,73,76,1);
+  }
+  
+  .baitcaster{
+  margin-bottom: 20px;
   }
 
   .baitcasterSub {
@@ -129,6 +145,8 @@ box-shadow:    5px 5px 0px 0px rgba(88, 88, 90, 1);
   		text-align: center;
   		color: $white;
   		background-color:rgba(130, 212, 237, 0.5);
+		margin-right: 3px;
+		
   }
 
 
@@ -346,6 +364,7 @@ background-color: $dgrey;
 	h3 {
 		font-size: 3em;
 		color: $lgrey;
+		
 	}
 
 	input, label {
@@ -353,6 +372,7 @@ background-color: $dgrey;
     margin:5px;
     margin-top: 25%;
 }
+
 
 label {
 	font-family: $mainFont;
@@ -397,9 +417,29 @@ h4 {
 	h2 {
 	font-size: 2.75em;
 	}
+	
+	h3 {
+	font-size: 2.2em;
+	}
+	
+	#shopPrice{
+	padding-top: 20px;
+	
+	}
+	
+	#QuantLabel{
+	padding-left: 10px;
+	padding-right: 20px;
+	}
+	
+	#addBut{
+	padding: 0px 30px 0px 30px;
+	}
 }
 
 }
+
+
 
 /* RATE SECTION ------------------------ */
 
@@ -431,7 +471,7 @@ h4 {
 	}
 
 	p {
-	background-color: $lblue;
+	background-color: $white;
 	color: $lgrey;
 	font-size: 1.4em;
 	padding: 15px;
@@ -449,9 +489,33 @@ h4 {
 }
 }
 
+
+#discountBox{
+background-color: $lblue;
+text-align: center;
+padding: 50px 0px 50px 0px;
+color: $dgrey;
+
+}
+
+@media (min-width: $screen-sm-min) {
+
+#rateSection {
+
+p{
+background-color: $white;
+padding-left: 80px;
+}
+
+}
+
+}
+
 /*FOOTER--------------*/
 
 footer {
+
+padding-bottom: 30px;
 
 #footerLogo{
 	
